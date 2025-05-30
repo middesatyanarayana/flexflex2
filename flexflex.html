@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Design Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  details summary{
+        list-style: none;
+  }
+.sidebar {
+        position: fixed;
+      top: 0;
+        left: 0;
+        height: 100vh; 
+        background-color: red;
+        color: white;
+        width: 250px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+}
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  .showcase {
+    margin-left: 250px; 
+    flex: 1;
+    padding: 60px 40px;
+    background-color: white;
+  }
+  
+  body {
+    display: flex;
+    min-height: 100px;
+  }
+  
+  .navbar {
+    display: flex;
+    width: 100%;
+  }
+  .sidebar {
+    background-color: red;
+    color: white;
+    width: 250px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .satya {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+  }
+  
+  .satya a {
+    
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+
+
+  .showcase {
+    flex: 1;
+    padding: 60px 40px;
+    background-color: white;
+  }
+  
+  .showcase h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .showcase h3 {
+    font-size: 50px;
+    color: red;
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+
+  .images {
+    display: flex;
+    gap: 20px;
+    
+  }
+  .services {
+    margin-top: 60px;
+  }
+  
+  .services h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .services p {
+    font-size: 18px;
+    color:black;
+  }
+
+.scientist {
+    text-align: center;
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(167, 163, 163, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .scientist:hover {
+    transform: translateY(-10px);
+  }
+  
+  .scientist img {
+    width: 100%;
+    border-radius: 8px;
+    
+  }
+  
+  .scientist h2 {
+    font-size: 24px;
+    margin-top: 15px;
+    color: gray;
+  }
+  
+  .scientist h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: red;
+  }
+  
+  .scientist p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+  }
+.packages {
+    margin-top: 60px;
+  }
+  
+  .packages p {
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .tables {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .table {
+    width: 300px;
+    border-collapse: collapse;
+    font-size: 25px;
+    box-shadow: 0 2px 10px black;
+    
+  }
+  
+  .table th {
+    
+    width: 100%;
+    color: orange;
+    padding: 10px;
+    font-size: 28px;
+  }
+  
+  .table td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .table button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .table button:hover {
+    background-color: darkorange;
+  }
+  .contact {
+    margin-top: 60px;
+  }
+  
+  .contact h3 {
+    color: red;
+    font-size: 40px;
+  }
+  
+  .contact p {
+    font-size: 20px;
+    color: black;
+    margin-top: 10px;
+  }form{
+    margin-left: 30px;
+}
+input{
+    width: 100%;
+    height: 40px;
+}
+textarea{
+    width: 100%;
+}
+button[type="submit"] {
+    background-color:black; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+} 
+.row {
+    font-size: 30px;
+    display: flex;
+  flex-direction: row;
+  background-color: aqua;
+}   
+.row div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.column {
+    font-size: 30px;
+    display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}   
+.column div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.row-reverse {
+    font-size: 30px;
+    display: flex;
+  flex-direction: row-reverse;
+  background-color: aqua;
+}   
+.row-reverse div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.column-reverse {
+    font-size: 30px;
+    display: flex;
+  flex-direction: column-reverse;
+  background-color: aqua;
+}   
+.column-reverse div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.nowrap div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: DodgerBlue;
+}
+
+.wrap div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.wrap-reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: DodgerBlue;
+}
+
+.wrap-reverse div {
+  background-color: yellow;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+}
+
+.center div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  background-color: DodgerBlue;
+}
+
+.flex-start div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  background-color: DodgerBlue;
+}
+
+.flex-end div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.space-around {
+  display: flex;
+  justify-content: space-around;
+  background-color: DodgerBlue;
+}
+
+.space-around div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  background-color: DodgerBlue;
+}
+
+.space-between div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: DodgerBlue;
+}
+
+.space-evenly div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.center1 {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+.center1 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-start1 {
+  display: flex;
+  height: 200px;
+  align-items: flex-start;
+  background-color: DodgerBlue;
+}
+
+.flex-start1 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-end1 {
+  display: flex;
+  height: 200px;
+  align-items: flex-end;
+  background-color: DodgerBlue;
+}
+
+.flex-end1 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.stretch {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+  background-color: DodgerBlue;
+}
+
+.stretch div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.baseline {
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+
+.baseline div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.center2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.center2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-start2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.flex-start2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-end2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.flex-end2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.stretch2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.stretch2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.space-around2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.space-around2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.space-between2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.space-between2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.space-evenly2 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  overflow: scroll;  
+  background-color: DodgerBlue;
+}
+
+.space-evenly2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-items {
+    margin-left:10px; 
+    flex: 1;
+    padding: 60px 40px;
+    background-color: white;
+  }
+  .order {
+  display: flex;
+  align-items: stretch;
+  background-color: white;
+}
+
+.order  div{
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-grow {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-grow  div{
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-shrink {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-shrink div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-basis {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-basis div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex5 {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex5 div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.align-self {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.align-self div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container6{
+  list-style: none;
+  cursor: pointer;
+  display: no;
+}
+.scrap{
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+</style>
+<body>
+  <div class="navbar">
+    <aside class="sidebar">
+      <h1></h1>
+      <nav class="satya">
+        <a href="#home" class="scrap">Home</a>
+        <details class="flex-container6">
+          <summary>FLEX-CONTAINER</summary>
+            <a href="#flex-direction" class="scrap">flex-direction</a>
+            <a href="#flex-wrap" class="scrap">flex-wrap</a>
+            <a href="#justify-content" class="scrap">justify-content</a>
+            <a href="#align-items" class="scrap">align-items</a>
+            <a href="#align-content" class="scrap">align-content</a>
+        </details>
+        <details style="cursor: pointer;">
+          <summary>FLEX-ITEMS</summary>
+          <a href="#order" class="scrap">order</a>
+          <a href="#flex-grow" class="scrap">flex-grow</a>
+          <a href="#flex-shrink" class="scrap">flex-shrink</a>
+          <a href="#flex-basis" class="scrap">flex-basis</a>
+          <a href="#flex5" class="scrap">flex</a>
+          <a href="#align-self" class="scrap">align-self</a>
+        </details>
+        
+      </nav>
+    </aside>
+
+    <main class="showcase">
+      <h2 style="color: red; padding-left: 350px;">FLEX</h2>
+      <h3>flex-container</h3>
+      <div style="display: block; gap: 30px; padding: 20px;">
+        <ul>
+          <li>flex-direction</li>
+          <li>flex-wrap</li>
+          <li>flex-flow</li>
+          <li>justify-content</li>
+          <li>align-items</li>
+          <li>align-content</li>
+        </ul>
+        <h3 style="font-size: 30px;" id="flex-direction">flex-direction</h3>
+        <p>The flex-direction property specifies the display-direction of flex items in the flex container. <br>
+
+            The flex-direction property can have one of the following values:</p>
+            <ul>
+                <li>Row</li>
+                <li>Column</li>
+                <li>Row-Reverse</li>
+                <li>Column-Reverse</li>
+            </ul>
+            
+            <h3  style="font-size: 20px;" >Row:</h3>
+            <p>The row value is the default value, and it displays the flex items horizontally (from left to right):</p>
+            <div class="row">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+             <h3  style="font-size: 20px;" >Column:</h3>
+            <p>The column value displays the flex items vertically (from top to bottom):</p>
+            <div class="column">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+             <h3  style="font-size: 20px;" >Row-Reverse</h3>
+            <p>The row-reverse value displays the flex items horizontally (but from right to left):</p>
+            <div class="row-reverse">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >Column-Reverse</h3>
+            <p>The row-reverse value displays the flex items horizontally (but from right to left):</p>
+            <div class="column-reverse">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <br>
+            <h2 style="font-size: 30px; color: red;" id="flex-wrap">  flex-wrap</h2>
+            <p>The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line. <br>
+
+                The flex-wrap property can have one of the following values:</p>
+                <ul>
+                    <li>nowrap</li>
+                    <li>wrap</li>
+                    <li>wrap-reverse</li>
+                </ul>
+            <h3  style="font-size: 20px;" >nowrap</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="nowrap">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >wrap</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="wrap">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >wrap-reverse</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="wrap-reverse">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3 style="font-size: 30px;" id="justify-content">justify-content</h3>
+        <p>The justify-content property is used to align the flex items when they do not use all available space on the main-axis (horizontally). <br>
+
+           The justify-content property can have one of the following values:</p>
+            <ul>
+                <li>center</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>space-around</li>
+                <li>space-between</li>
+                <li>space-evenly</li>
+            </ul>
+            <h3  style="font-size: 20px;" >Center:</h3>
+            <p>The center value positions the flex items in the center of the container:</p>
+            <div class="center">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >flex-start:</h3>
+            <p>The center value positions the flex items in the center of the container:</p>
+            <div class="flex-start">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >flex-end:</h3>
+            <p>The center value positions the flex items in the center of the container:</p>
+            <div class="flex-end">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >space-around:</h3>
+            <p>The center value positions the flex items in the center of the container:</p>
+            <div class="space-around">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >space-between:</h3>
+            <p>The center value positions the flex items in the center of the container:</p>
+            <div class="space-between">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >space-evenly:</h3>
+            <p>The center value positions the flex items in the center of the container:</p>
+            <div class="space-evenly">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3 style="font-size: 30px;" id="align-items">align-items</h3>
+            <p>The align-items property is used to align the flex items when they do not use all available space on the cross-axis (vertically). <br>
+
+               The align-items property can have one of the following values:</p>
+            <ul>
+                <li>center1</li>
+                <li>flex-start</li>
+                <li>flex-end</li>
+                <li>stretch</li>
+                <li>baseline</li>
+                <li>normal</li>
+            </ul>
+            <h3  style="font-size: 20px;" >center:</h3>
+            <p>The center value positions the flex items in the middle of the container:</p>
+            <div class="center1">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+
+            <h3  style="font-size: 20px;" >flex-start:</h3>
+            <p>The center value positions the flex items in the middle of the container:</p>
+            <div class="flex-start1">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >flex-end:</h3>
+            <p>The center value positions the flex items in the middle of the container:</p>
+            <div class="flex-end1">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >stretch:</h3>
+            <p>The center value positions the flex items in the middle of the container:</p>
+            <div class="stretch">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3  style="font-size: 20px;" >baseline:</h3>
+            <p>The center value positions the flex items in the middle of the container:</p>
+            <div class="baseline">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            </div>
+            <h3 style="font-size: 30px;" id="align-content">align-content</h3>
+            <p>The align-content property is used to align the flex lines. <br>
+
+                The align-content property is similar to align-items, but instead of aligning flex items, it aligns the flex lines. <br>
+
+                The align-content property can have one of the following values:</p>
+            <ul>
+                 <li>center2</li>
+                 <li>stretch2</li>
+                <li>flex-start2</li>
+                <li>flex-end2</li>
+                <li>space-around2</li>
+                <li>space-between2</li>
+                <li>space-evenly2</li>
+            </ul>
+            <h3  style="font-size: 20px;" >center</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="center2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >flex-start</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="flex-start2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >flex-end</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="flex-end2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >stretch</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="stretch2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >space-around</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="space-around2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >space-between</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="space-between2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+            <h3  style="font-size: 20px;" >space-evenly</h3>
+            <p>The nowrap value specifies that the flex items will not wrap (this is default):</p>
+            <div class="space-evenly2">
+            <div >1</div>
+            <div >2</div>
+            <div >3</div>
+            <div >4</div>
+            <div >5</div>
+            <div >6</div>
+            <div >7</div>
+            <div >8</div>
+            <div >9</div>
+            </div>
+
+      </div>
+      <section class="flex-items" id="flex-items"  >
+        <h1 style="color: red; font-size: 45px; ">FLEX ITEMS:</h1>
+        <ul>
+            <li>order</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>align-self</li>
+        </ul>
+        <h3 style="font-size: 25px;" id="order">order:</h3>
+        <p>Use the order property to sort the flex items as you like:</p>
+        <div class="order">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div> 
+        <div style="order: 1">4</div>
+        </div>
+        <h3 style="font-size: 25px;" id="flex-grow">flex-grow:</h3>
+        <p>Use the order property to sort the flex items as you like:</p>
+        <div class="flex-grow">
+       <div style="flex-grow: 1">1</div>
+       <div style="flex-grow: 1">2</div>
+      <div style="flex-grow: 8">3</div>
+      </div>
+      <h3 style="font-size: 25px;" id="flex-shrink">flex-shrink:</h3>
+       <p>Use the order property to sort the flex items as you like:</p>
+      <div class="flex-shrink">
+       <div>1</div>
+      <div>2</div>
+       <div style="flex-shrink: 0">3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+       <div>10</div>
+    </div>
+    <h3 style="font-size: 25px;" id="flex-basis">flex-basis:</h3>
+    <p>Set the initial length of the third flex item to 200 pixels:</p>
+
+<div class="flex-basis">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-basis:200px">3</div>
+  <div>4</div>
+</div>
+      <h3 style="font-size: 25px;" id="flex5">flex:</h3>
+      <p>Make the third flex item not growable (0), not shrinkable (0), and with an initial length of 200 pixels:</p>
+
+<div class="flex5">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex: 0 0 200px">3</div>
+  <div>4</div>
+</div>
+           <h3 style="font-size: 25px;" id="align-self"> align-self</h3>
+           <p>The "align-self: center;" aligns the selected flex item in the middle of the container:</p>
+
+<div class="align-self">
+  <div>1</div>
+  <div>2</div>
+  <div style="align-self: center">3</div>
+  <div>4</div>
+</div>
+
+
+      </section>
+    </main>
+  </div>
+</body>
+</html>
